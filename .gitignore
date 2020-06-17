@@ -1,0 +1,8 @@
+checkpoints/
+log/
+.vscode/
+__pycache__/
+*.pdf
+*.npy
+*.csv
+*.ipynb
