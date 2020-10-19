@@ -17,6 +17,23 @@
 - Amazon (co-purchasing network) 
 
 
+## Hyperparameters 
+
+### Cora 
+```bash
+python train.py --model=adagnn --dataset=cora --lr=0.01 --percentage=0.05 --n-layers=5 --dropout=0.5 --weight-decay=5e-6 --n-hidden=16 --n-epochs=200 --self-loop
+
+```
+Use 5 layers for 5% and 3%, 9 layers for 1%.
+
+```bash
+python train.py --percentage=0.05 --n-layers=3  --dataset=cora --model=adagat --lr=0.005 --dropout=0.6 --weight-decay=5.00E-04 --n-hidden=8 --n-epochs=300 --self-loop
+```
+Use 3 layers for 5%, 3% and 1%.
+Notice that due to the size of the dataset, the variance of performance with 1% seed labels is relatively large. 
+
+
+
 ## Models
 
 - GCN
